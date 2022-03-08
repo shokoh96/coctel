@@ -45,16 +45,6 @@ body {
   font-family: HarenosoraMincho;
 }
 
-/* #container {
-  width: 100%;
-  height: 100vh;
-  background: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
 #container {
   width: 100%;
   height: 100vh;
@@ -63,6 +53,17 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left !important;
+}
+
+#bottom-container {
+  width: 100%;
+  height: 100vh;
+  /* background: #fff !important; */
+  display: block !important;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  background-color: #355469 !important;
 }
 
 a {
@@ -91,7 +92,7 @@ a:hover {
 .section-left {
   position: relative;
   width: 73%;
-  height: 625px;
+  height: 80vh;
   background-color: #355469;
 }
 .section-left::after {
@@ -121,7 +122,7 @@ h1 + p {
 }
 .section-right {
   width: 27%;
-  height: 625px;
+  height: 80vh;
   background-color: #baa68b;
 }
 .section-right-text {
@@ -130,24 +131,28 @@ h1 + p {
   font-size: 30px;
   color: #fff;
 }
-.section-right-btn a {
-  display: inline-block;
-  margin: 0 auto;
+.section-right-btn ul {
+  text-align: center;
+  margin-left: -30px;
 }
-.section-right-btn .cactel-serarch {
+.section-right-btn ul > li {
   margin-bottom: 20px;
 }
+.section-right-btn a {
+  display: inline-block;
+}
+
+/* ----- main-bottom ----- */
 
 /*========= スクロールダウンのためのCSS ===============*/
-
-/*====== 9-1-1 縦線が動いてスクロールを促す =======*/
 
 /*スクロールダウン全体の場所*/
 .scrolldown1 {
   /*描画位置※位置は適宜調整してください*/
   position: absolute;
+  top: 30%;
   left: 50%;
-  bottom: 10px;
+  /* bottom: 10px; */
   /*全体の高さ*/
   height: 50px;
 }
@@ -160,7 +165,7 @@ h1 + p {
   top: -15px;
   /*テキストの形状*/
   color: #eee;
-  font-size: 0.7rem;
+  font-size: 25px;
   letter-spacing: 0.05em;
 }
 
@@ -170,6 +175,7 @@ h1 + p {
   /*描画位置*/
   position: absolute;
   top: 0;
+  left: 22px;
   /*線の形状*/
   width: 1px;
   height: 30px;
@@ -200,7 +206,7 @@ h1 + p {
 /*========= レイアウトのためのCSS ===============*/
 #header {
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   position: relative;
 }
 
@@ -220,7 +226,6 @@ h1 + p {
   position: relative;
   z-index: 1;
   background: #eee;
-  /* padding: 0 0 600px 0; */
   padding: 0;
   text-align: center;
 }
