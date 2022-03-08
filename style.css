@@ -41,7 +41,11 @@
 
 /*========= レイアウトのためのCSS ===============*/
 
-#container {
+body {
+  font-family: HarenosoraMincho;
+}
+
+/* #container {
   width: 100%;
   height: 100vh;
   background: #ccc;
@@ -49,6 +53,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+} */
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #fff !important;
+  display: block !important;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
 }
 
 a {
@@ -57,4 +71,82 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+/* --------------------------------
+              main
+-------------------------------- */
+/* ----- main-top ----- */
+.main-top {
+  position: relative;
+}
+.main-top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-section {
+  display: flex;
+}
+
+.section-left {
+  position: relative;
+  width: 73%;
+  height: 625px;
+  background-color: #355469;
+}
+.section-left::after {
+  content: "";
+  position: absolute;
+  top: 225px;
+  width: 665.5px;
+  height: 1px;
+  display: block;
+  background-color: #fce4e7;
+}
+.section-left-text {
+  margin-top: 185px;
+  margin-left: 120px;
+  color: #fff;
+}
+.title {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+h1 {
+  margin-bottom: 25px;
+  font-size: 70px;
+}
+h1 + p {
+  font-size: 25px;
+}
+
+.section-right {
+  width: 27%;
+  height: 625px;
+  background-color: #baa68b;
+}
+
+.section-right-text {
+  width: 240px;
+  margin: 335px auto 40px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.section-right-btn a {
+  width: 212px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  line-height: 40px;
+  background-color: #355469;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-right-btn .cactel-serarch {
+  margin-bottom: 20px;
 }
