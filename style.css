@@ -80,16 +80,14 @@ a:hover {
 .main-top {
   position: relative;
 }
-.main-top img {
+.main-top::after {
+  content: url(img/top-image.png);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 420px;
 }
-
 .top-section {
   display: flex;
 }
-
 .section-left {
   position: relative;
   width: 73%;
@@ -121,32 +119,115 @@ h1 {
 h1 + p {
   font-size: 25px;
 }
-
 .section-right {
   width: 27%;
   height: 625px;
   background-color: #baa68b;
 }
-
 .section-right-text {
   width: 240px;
   margin: 335px auto 40px;
   font-size: 30px;
   color: #fff;
 }
-
 .section-right-btn a {
-  width: 212px;
-  height: 40px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  line-height: 40px;
-  background-color: #355469;
-  color: #fff;
-  text-decoration: none;
+}
+.section-right-btn .cactel-serarch {
+  margin-bottom: 20px;
+}
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*====== 9-1-1 縦線が動いてスクロールを促す =======*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  /*全体の高さ*/
+  height: 50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+  /*描画位置*/
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  /*テキストの形状*/
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 30px;
+  background: #eee;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+/*========= レイアウトのためのCSS ===============*/
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#header:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("img/top-cocktail.png") no-repeat center;
+  background-size: cover;
+}
+
+#container {
+  position: relative;
+  z-index: 1;
+  background: #eee;
+  /* padding: 0 0 600px 0; */
+  padding: 0;
   text-align: center;
 }
 
-.section-right-btn .cactel-serarch {
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  #header,
+  #header:before {
+    height: 90vh;
+  }
 }
