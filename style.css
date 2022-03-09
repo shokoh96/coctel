@@ -64,6 +64,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left !important;
+  overflow: hidden;
 }
 
 #bottom-container {
@@ -74,6 +75,7 @@ body {
   align-items: center;
   text-align: left !important;
   background-color: #355469 !important;
+  overflow: hidden;
 }
 
 a {
@@ -274,14 +276,37 @@ h1 + p {
   margin-top: 38px;
 }
 .bt-sec-tp-right {
+  position: static;
   width: 500px;
+  z-index: 10;
 }
 .bt-sec-tp-right img {
   width: 100%;
 }
 
 .bottom-sec-bt {
+  position: relative;
   margin-top: 426px;
+}
+.bottom-sec-bt::before {
+  position: absolute;
+  content: "";
+  top: -508px;
+  right: -200px;
+  width: 720px;
+  height: 720px;
+  border: 1px solid #fce4e7;
+  border-radius: 50%;
+}
+.bottom-sec-bt::after {
+  position: absolute;
+  content: "";
+  top: -311px;
+  left: -222px;
+  width: 720px;
+  height: 720px;
+  border: 1px solid #fce4e7;
+  border-radius: 50%;
 }
 .bt-sec-bt-search p,
 .bt-sec-bt-memory p,
@@ -299,7 +324,7 @@ h1 + p {
 .bt-sec-bt-search p a:hover,
 .bt-sec-bt-memory p a:hover,
 .bt-sec-bt-memo p a:hover {
-  color: #666;
+  color: #999;
 }
 
 .bt-sec-bt-image {
@@ -308,6 +333,16 @@ h1 + p {
   top: 91px;
   left: 50%;
   transform: translateX(-52%);
+}
+.bt-sec-bt-image::after {
+  position: absolute;
+  content: "";
+  bottom: -745px;
+  right: -423px;
+  width: 720px;
+  height: 720px;
+  border: 1px solid #fce4e7;
+  border-radius: 50%;
 }
 
 .bt-sec-bt-search {
@@ -324,6 +359,7 @@ h1 + p {
   position: absolute;
   bottom: -112px;
   right: 36px;
+  z-index: 10;
 }
 
 /* --------------------------------
