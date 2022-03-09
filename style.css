@@ -68,7 +68,7 @@ body {
 
 #bottom-container {
   width: 100%;
-  height: 100%;
+  height: 1565px;
   display: block !important;
   justify-content: center;
   align-items: center;
@@ -281,8 +281,7 @@ h1 + p {
 }
 
 .bottom-sec-bt {
-  margin-top: 427px;
-  padding-left: 351px;
+  margin-top: 426px;
 }
 .bt-sec-bt-search p,
 .bt-sec-bt-memory p,
@@ -296,6 +295,35 @@ h1 + p {
   color: #fff;
   text-decoration: none;
   font-size: 23px;
+}
+.bt-sec-bt-search p a:hover,
+.bt-sec-bt-memory p a:hover,
+.bt-sec-bt-memo p a:hover {
+  color: #666;
+}
+
+.bt-sec-bt-image {
+  display: inline-block;
+  position: relative;
+  top: 91px;
+  left: 50%;
+  transform: translateX(-52%);
+}
+
+.bt-sec-bt-search {
+  position: absolute;
+  top: -90px;
+  left: -203px;
+}
+.bt-sec-bt-memory {
+  position: absolute;
+  top: -33px;
+  right: -240px;
+}
+.bt-sec-bt-memo {
+  position: absolute;
+  bottom: -112px;
+  right: 36px;
 }
 
 /* --------------------------------
