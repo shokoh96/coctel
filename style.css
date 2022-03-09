@@ -74,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left !important;
-  background-color: #355469 !important;
+  background: linear-gradient(#355469 0%, #1b2a35 100%);
   overflow: hidden;
 }
 
@@ -106,7 +106,7 @@ a:hover {
   position: relative;
   width: 78%;
   height: 79vh;
-  background-color: #355469;
+  background: linear-gradient(#355469 0%, #1b2a35 100%);
 }
 .section-left::after {
   content: "";
@@ -115,7 +115,8 @@ a:hover {
   width: 500px;
   height: 1px;
   display: block;
-  background-color: #fce4e7;
+  width: 506px;
+  height: 834px;
 }
 .section-left-text {
   margin-top: 187px;
@@ -142,7 +143,7 @@ h1 + p {
 .section-right {
   width: 28%;
   height: 79vh;
-  background-color: #baa68b;
+  background: linear-gradient(#baa68b 0%, #5d5346 100%);
 }
 .section-right-text {
   width: 250px;
