@@ -40,6 +40,17 @@
 }
 
 /*========= レイアウトのためのCSS ===============*/
+/* Webフォントを定義 */
+@font-face {
+  font-family: "せのびゴシック"; /* フォント名 */
+  /* フォーマットごとにパスを指定 */
+  src: url("fonts/Senobi-Gothic-Bold.ttf");
+}
+@font-face {
+  font-family: "HarenosoraMincho"; /* フォント名 */
+  /* フォーマットごとにパスを指定 */
+  src: url("fonts/Harenosora.otf");
+}
 
 body {
   font-family: HarenosoraMincho;
@@ -47,7 +58,8 @@ body {
 
 #container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   background: #fff !important;
   display: block !important;
   justify-content: center;
@@ -58,7 +70,6 @@ body {
 #bottom-container {
   width: 100%;
   height: 100vh;
-  /* background: #fff !important; */
   display: block !important;
   justify-content: center;
   align-items: center;
@@ -114,11 +125,13 @@ a:hover {
   font-size: 30px;
 }
 h1 {
+  font-family: "せのびゴシック";
   margin-bottom: 25px;
-  font-size: 70px;
+  font-size: 50px;
 }
 h1 + p {
-  font-size: 25px;
+  font-family: "せのびゴシック";
+  font-size: 19px;
 }
 .section-right {
   width: 27%;
@@ -143,9 +156,7 @@ h1 + p {
 }
 
 /* ----- main-bottom ----- */
-
 /*========= スクロールダウンのためのCSS ===============*/
-
 /*スクロールダウン全体の場所*/
 .scrolldown1 {
   /*描画位置※位置は適宜調整してください*/
@@ -235,4 +246,45 @@ h1 + p {
   #header:before {
     height: 90vh;
   }
+}
+
+.bottom-sec-tp {
+  max-width: 1010px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 270px;
+  margin: 0 auto;
+}
+
+.bt-sec-tp-left {
+  margin-top: 50px;
+  font-size: 22.5px;
+  color: #fff;
+}
+.bt-sec-tp-left > p {
+  line-height: 1.5;
+}
+
+.bt-sec-tp-left > p + p {
+  margin-top: 35px;
+}
+
+.bt-sec-tp-right {
+  width: 500px;
+}
+
+.bt-sec-tp-right img {
+  width: 100%;
+}
+
+/* --------------------------------
+              footer
+-------------------------------- */
+footer {
+  position: absolute;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
 }
