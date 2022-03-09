@@ -125,16 +125,19 @@ a:hover {
 .title {
   margin-bottom: 51px;
   font-size: 23px;
+  text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 {
   font-family: "せのびゴシック";
   margin-bottom: 25px;
   margin-left: -8px;
   font-size: 51px;
+  text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 + p {
   font-family: "せのびゴシック";
   font-size: 19px;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
 .section-right {
   width: 28%;
@@ -150,6 +153,7 @@ h1 + p {
 }
 .section-right-text p {
   padding-left: 48px;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
 .section-right-btn ul {
   text-align: center;
@@ -159,6 +163,9 @@ h1 + p {
 }
 .section-right-btn a {
   display: inline-block;
+}
+.section-right-btn a:hover {
+  opacity: 0.8;
 }
 
 /* ----- main-bottom ----- */
@@ -313,6 +320,7 @@ h1 + p {
 .bt-sec-bt-memo p {
   color: #fff;
   font-size: 23px;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
 .bt-sec-bt-search p a,
 .bt-sec-bt-memory p a,
@@ -324,7 +332,7 @@ h1 + p {
 .bt-sec-bt-search p a:hover,
 .bt-sec-bt-memory p a:hover,
 .bt-sec-bt-memo p a:hover {
-  color: #999;
+  opacity: 0.6;
 }
 
 .bt-sec-bt-image {
