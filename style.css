@@ -68,7 +68,7 @@ body {
 
 #bottom-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: block !important;
   justify-content: center;
   align-items: center;
@@ -109,8 +109,8 @@ a:hover {
 .section-left::after {
   content: "";
   position: absolute;
-  top: 225px;
-  width: 665.5px;
+  top: 227px;
+  width: 500px;
   height: 1px;
   display: block;
   background-color: #fce4e7;
@@ -176,11 +176,11 @@ h1 + p {
 .scrolldown1 span {
   /*描画位置*/
   position: absolute;
-  left: -15px;
-  top: -15px;
+  left: -26px;
+  top: 6px;
   /*テキストの形状*/
   color: #eee;
-  font-size: 25px;
+  font-size: 18px;
   letter-spacing: 0.05em;
 }
 
@@ -190,7 +190,7 @@ h1 + p {
   /*描画位置*/
   position: absolute;
   top: 0;
-  left: 22px;
+  left: 0px;
   /*線の形状*/
   width: 1px;
   height: 30px;
@@ -204,7 +204,7 @@ h1 + p {
 @keyframes pathmove {
   0% {
     height: 0;
-    top: 0;
+    top: 30px;
     opacity: 0;
   }
   30% {
@@ -253,32 +253,49 @@ h1 + p {
 }
 
 .bottom-sec-tp {
-  max-width: 1010px;
+  max-width: 1075px;
   display: flex;
   justify-content: space-between;
   padding-top: 270px;
+  padding-left: 54px;
   margin: 0 auto;
 }
 
 .bt-sec-tp-left {
-  margin-top: 50px;
+  margin-top: 55px;
   font-size: 22.5px;
   color: #fff;
 }
 .bt-sec-tp-left > p {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .bt-sec-tp-left > p + p {
-  margin-top: 35px;
+  margin-top: 38px;
 }
-
 .bt-sec-tp-right {
   width: 500px;
 }
-
 .bt-sec-tp-right img {
   width: 100%;
+}
+
+.bottom-sec-bt {
+  margin-top: 427px;
+  padding-left: 351px;
+}
+.bt-sec-bt-search p,
+.bt-sec-bt-memory p,
+.bt-sec-bt-memo p {
+  color: #fff;
+  font-size: 23px;
+}
+.bt-sec-bt-search p a,
+.bt-sec-bt-memory p a,
+.bt-sec-bt-memo p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
 }
 
 /* --------------------------------
