@@ -274,7 +274,7 @@ h1 + p {
   }
 }
 
-.bottom-sec-tp {
+.bottom-tp {
   max-width: 1075px;
   display: flex;
   justify-content: space-between;
@@ -283,32 +283,32 @@ h1 + p {
   margin: 0 auto;
 }
 
-.bt-sec-tp-left {
+.bottom-tp-left {
   margin-top: 55px;
   font-size: 22.5px;
   color: #fff;
 }
-.bt-sec-tp-left > p {
+.bottom-tp-left > p {
   line-height: 1.7;
 }
 
-.bt-sec-tp-left > p + p {
+.bottom-tp-left > p + p {
   margin-top: 38px;
 }
-.bt-sec-tp-right {
+.bottom-tp-right {
   position: static;
   width: 500px;
   z-index: 10;
 }
-.bt-sec-tp-right img {
+.bottom-tp-right img {
   width: 100%;
 }
 
-.bottom-sec-bt {
+.bottom-bt {
   position: relative;
   margin-top: 426px;
 }
-.bottom-sec-bt::before {
+.bottom-bt::before {
   position: absolute;
   content: "";
   top: -508px;
@@ -318,7 +318,7 @@ h1 + p {
   border: 1px solid #fce4e7;
   border-radius: 50%;
 }
-.bottom-sec-bt::after {
+.bottom-bt::after {
   position: absolute;
   content: "";
   top: -311px;
@@ -328,34 +328,34 @@ h1 + p {
   border: 1px solid #fce4e7;
   border-radius: 50%;
 }
-.bt-sec-bt-search p,
-.bt-sec-bt-memory p,
-.bt-sec-bt-memo p {
+.bt-contents-search p,
+.bt-contents-memory p,
+.bt-contents-memo p {
   color: #fff;
   font-size: 23px;
   text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
-.bt-sec-bt-search p a,
-.bt-sec-bt-memory p a,
-.bt-sec-bt-memo p a {
+.bt-contents-search p a,
+.bt-contents-memory p a,
+.bt-contents-memo p a {
   color: #fff;
   text-decoration: none;
   font-size: 23px;
 }
-.bt-sec-bt-search p a:hover,
-.bt-sec-bt-memory p a:hover,
-.bt-sec-bt-memo p a:hover {
+.bt-contents-search p a:hover,
+.bt-contents-memory p a:hover,
+.bt-contents-memo p a:hover {
   opacity: 0.6;
 }
 
-.bt-sec-bt-image {
+.bottom-bt-contents {
   display: inline-block;
   position: relative;
   top: 91px;
   left: 50%;
   transform: translateX(-52%);
 }
-.bt-sec-bt-image::after {
+.bottom-bt-contents::after {
   position: absolute;
   content: "";
   bottom: -745px;
@@ -366,17 +366,17 @@ h1 + p {
   border-radius: 50%;
 }
 
-.bt-sec-bt-search {
+.bt-contents-search {
   position: absolute;
   top: -90px;
   left: -203px;
 }
-.bt-sec-bt-memory {
+.bt-contents-memory {
   position: absolute;
   top: -33px;
   right: -240px;
 }
-.bt-sec-bt-memo {
+.bt-contents-memo {
   position: absolute;
   bottom: -112px;
   right: 36px;
