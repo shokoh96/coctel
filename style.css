@@ -9,7 +9,6 @@
   z-index: 999;
   background: linear-gradient(#355469 0%, #00151d 100%);
   text-align: center;
-  color: #fff;
 }
 
 /* Loading画像中央配置　*/
@@ -22,7 +21,7 @@
 
 /* Loading アイコンの大きさ設定　*/
 #splash_logo svg {
-  width: 300px;
+  width: 635px;
 }
 
 /*========= SVG操作手書き風にするためのCSS ===============*/
