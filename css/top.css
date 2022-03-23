@@ -32,14 +32,14 @@
 /* レイアウト */
 @font-face {
   font-family: "せのびゴシック";
-  src: url("fonts/Senobi-Gothic-Bold.ttf");
+  src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
 @font-face {
   font-family: "HarenosoraMincho";
-  src: url("fonts/Harenosora.otf");
+  src: url("../fonts/Harenosora.otf");
 }
 body {
-  font-family: HarenosoraMincho;
+  font-family: "HarenosoraMincho";
 }
 #container {
   width: 100%;
@@ -56,16 +56,16 @@ body {
 
 /* ------------ main ------------ */
 /* --------------------------------
-          main-top
+          .main-top
 -------------------------------- */
 .main-top {
   position: relative;
   display: flex;
 }
 .main-top::after {
-  content: url(img/top_man.png);
+  content: url(../img/top_man.png);
   position: absolute;
-  top: 445px;
+  top: 492px;
   left: 23px;
 }
 /* top-left */
@@ -83,8 +83,13 @@ body {
   margin: 0 auto;
   font-family: "Hiragino Kaku Gothic ProN";
 }
+@media (max-width: 1500px) {
+  .top-left nav {
+    margin-left: 3%;
+  }
+}
 .item {
-  max-width: 960px;
+  max-width: 1055px;
   height: 105px;
   display: flex;
   justify-content: flex-start;
@@ -93,7 +98,7 @@ body {
   list-style: none;
 }
 .item li a {
-  font-size: 16px;
+  font-size: 17px;
   color: #fce4e7;
   text-decoration: none;
   display: block;
@@ -114,32 +119,37 @@ body {
 .top-left::after {
   content: "";
   position: absolute;
-  top: 227px;
-  width: 500px;
+  top: 252px;
+  width: 555px;
   height: 1px;
   display: block;
   border-bottom: 1px solid #fce4e7;
 }
 .top-left-text {
-  max-width: 821px;
-  margin: 187px auto;
+  max-width: 900px;
+  margin: 210px auto;
   color: #fff;
+}
+@media (max-width: 1500px) {
+  .top-left-text {
+    padding-left: 3%;
+  }
 }
 .title {
   margin-bottom: 51px;
-  font-size: 23px;
+  font-size: 25px;
   text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 {
   font-family: "せのびゴシック";
   margin-bottom: 25px;
-  margin-left: -8px;
-  font-size: 51px;
+  margin-left: -11px;
+  font-size: 55px;
   text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 + p {
   font-family: "せのびゴシック";
-  font-size: 19px;
+  font-size: 21px;
   text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
 /* top-right */
@@ -149,9 +159,9 @@ h1 + p {
   background: linear-gradient(#baa68b 0%, #5d5346 100%);
 }
 .top-right-text {
-  width: 250px;
-  margin: 332px auto 45px;
-  font-size: 23px;
+  width: 264px;
+  margin: 366px auto 50px;
+  font-size: 26px;
   color: #fff;
   line-height: 1.55;
 }
@@ -253,7 +263,7 @@ h1 + p {
 /* ----- bottom-container ----- */
 #bottom-container {
   width: 100%;
-  height: 1565px;
+  height: 1753px;
   display: block !important;
   justify-content: center;
   align-items: center;
@@ -263,27 +273,27 @@ h1 + p {
 }
 /* bottom-tp */
 .bottom-tp {
-  max-width: 1075px;
+  max-width: 1197px;
   display: flex;
   justify-content: space-between;
-  padding-top: 270px;
-  padding-left: 54px;
+  padding-top: 303px;
+  padding-left: 63px;
   margin: 0 auto;
 }
 .bottom-tp-left {
-  margin-top: 55px;
-  font-size: 22.5px;
+  margin-top: 60px;
+  font-size: 24px;
   color: #fff;
 }
 .bottom-tp-left > p {
   line-height: 1.7;
 }
 .bottom-tp-left > p + p {
-  margin-top: 38px;
+  margin-top: 48px;
 }
 .bottom-tp-right {
   position: static;
-  width: 500px;
+  width: 580px;
   z-index: 10;
 }
 .bottom-tp-right img {
@@ -292,25 +302,25 @@ h1 + p {
 /* bottom-bt */
 .bottom-bt {
   position: relative;
-  margin-top: 426px;
+  margin-top: 462px;
 }
 .bottom-bt::before {
   position: absolute;
   content: "";
-  top: -508px;
-  right: -200px;
-  width: 720px;
-  height: 720px;
+  top: -573px;
+  right: -220px;
+  width: 800px;
+  height: 800px;
   border: 1px solid #fce4e7;
   border-radius: 50%;
 }
 .bottom-bt::after {
   position: absolute;
   content: "";
-  top: -311px;
-  left: -222px;
-  width: 720px;
-  height: 720px;
+  top: -353px;
+  left: -247px;
+  width: 800px;
+  height: 800px;
   border: 1px solid #fce4e7;
   border-radius: 50%;
 }
@@ -324,34 +334,34 @@ h1 + p {
 .bottom-bt-contents::after {
   position: absolute;
   content: "";
-  bottom: -745px;
-  right: -423px;
-  width: 720px;
-  height: 720px;
+  bottom: -827px;
+  right: -473px;
+  width: 800px;
+  height: 800px;
   border: 1px solid #fce4e7;
   border-radius: 50%;
 }
 .bt-contents-search {
   position: absolute;
-  top: -90px;
-  left: -203px;
+  top: -97px;
+  left: -225px;
 }
 .bt-contents-memory {
   position: absolute;
-  top: -33px;
-  right: -240px;
+  top: -35px;
+  right: -254px;
 }
 .bt-contents-memo {
   position: absolute;
-  bottom: -112px;
-  right: 36px;
+  bottom: -126px;
+  right: 53px;
   z-index: 10;
 }
 .bt-contents-search p,
 .bt-contents-memory p,
 .bt-contents-memo p {
   color: #fff;
-  font-size: 23px;
+  font-size: 25px;
   text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
 .bt-contents-search p a,
@@ -382,7 +392,7 @@ h1 + p {
 }
 .footer h3 {
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-shadow: 3px 3px 3px black;
@@ -391,5 +401,6 @@ h1 + p {
 .footer p {
   color: white;
   font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
 }
